@@ -1,0 +1,24 @@
+# The config file of wind
+root_path: /home/zxq/competitions/bigData24/data/global # /root/mine/BDC2024/dataset/north/train
+data_path: wind.npy 
+model_id: v1
+model: iTransformer
+data: Meteorology
+features: MS
+seq_len: 168
+label_len: 2
+pred_len: 24
+e_layers: 1
+enc_in: 38
+d_model: 64
+d_ff: 64
+n_heads: 1
+des: global_temp_wind
+learning_rate: 0.01
+batch_size: 15360
+train_epochs: 4
+num_workers: 0
+root_path_val: /root/mine/BDC2024/dataset/north/val/
+data_path_val: wind.npy
+steps_val: 2000 # 500
+lradj: cosine

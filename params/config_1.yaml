@@ -1,0 +1,24 @@
+# The config file of temperature
+root_path: /home/zxq/competitions/bigData24/data/global # /root/mine/BDC2024/dataset/rolling_shift_diff_origin/train # /root/mine/BDC2024/dataset/north/train  /home/zxq/competitions/bigData24/data/global
+data_path: temp.npy
+model_id: v1
+model: iTransformer
+data: Meteorology
+features: M
+seq_len: 168
+label_len: 2
+pred_len: 72
+e_layers: 1
+enc_in: 38 # 44
+d_model: 64
+d_ff: 64
+n_heads: 1
+des: global_temp_wind_kfold
+learning_rate: 0.01
+batch_size: 30720 # 15360
+train_epochs: 4
+num_workers: 32 # set to 8 for the final submission
+root_path_val: /root/mine/BDC2024/dataset/north/val/
+data_path_val: temp.npy
+steps_val: 2000 # 500
+lradj: cosine
