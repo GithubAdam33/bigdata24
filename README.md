@@ -21,6 +21,8 @@ scipy == 1.11.4
 ## 算法（必选）
 itransformer - MMOE
 
+tsinghua-iTransformer
+https://github.com/thuml/iTransformer
 ## 整体思路介绍（必选）
 将itransformer的encoder作为三个专家同时预测wind和temp，然后再额外设置两个gate对三个专家的结果进行加权求和，对两个结果再通过bilstm，同时预测wind和temp。
 
