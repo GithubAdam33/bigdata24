@@ -1,14 +1,22 @@
 # bigdata24
 bigdata code
+
 代码说明
+
 环境配置（必选）
-比赛服务器提供的基础镜像
+
 python == 3.7
+
 pytorch == 1.10.2
+
 Cuda == 11.3.1
+
 pyyaml == 6.0.1
+
 scikit-learn == 1.2.2
+
 scipy == 1.11.4
+
 
 算法（必选）
 itransformer - MMOE
