@@ -26,7 +26,7 @@ itransformer - MMOE
 
 网络结构
 网络结构
-
+![MMoe](mmoe.png "MMoe")
 
 损失函数
 loss wind和temp的mse
